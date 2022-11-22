@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Controles de Formularios HTML</title>
+</head>
+<body bgcolor="grey">
+    <h1>Prueba de controles de formularios HTML</h1>
+    <h3 id="h3ayuda">Ayuda</h3>
+    <hr/>
+    <form action="../index.html" method="get">
+        <label for="txtNombre">Nombre:</label>
+        <input type="text" name="txtNombre" id="txtNombre" 
+        placeholder="escriba su nombre aquí"
+        onfocus="cargarAyudaNombre();"> 
+        <br/>
+        <label for="txtApellido">Apellido:</label>
+        <input type="text" name="txtApellido" id="txtApellido" 
+        placeholder="escriba su apellido aquí"
+        onfocus="cargarAyudaApellido();"> 
+        <br/>
+        <label for="chkCasado">Casado:</label>
+        <input type="checkbox" name="chkCasado" id="chkCasado"
+        onfocus="cargarAyudaEstadoCivil();">
+        <br/>
+        <label for="datFechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" name="datFechaNacimiento" id="datFechaNacimiento">
+        <br/>
+        <label for="dttHorarioTicket">Horario ticket:</label>
+        <input type="datetime-local" name="dttHorarioTicket" id="dttHorarioTicket">
+        <br>
+        <label for="timHorarioTicket">Horario ticket:</label>
+        <input type="time" name="timHorarioTicket" id="timHorarioTicket">
+        <br>
+        <label for="txtPassword">Password:</label>
+        <input type="password" name="txtPassword" id="txtPassword">
+        <br>
+        <label for="txtEmail">Email:</label>
+        <input type="email" name="txtEmail" id="txtEmail" required>
+        <br>
+        <!--probando combobox -->
+        <label for="cboLocalidad">Localidad:</label>
+        <select name="cboLocalidad" id="cboLocalidad">
+            <option value="San Justo">San Justo</option>
+            <option value="Gobernador Crespo">Gobernador Crespo</option>            
+            <option value="Marcelino Escalada">Marcelino Escalada</option>
+        </select>
+        <input type="hidden" name="hidColor" value="black">
+        <br>
+        <label for="btnLimpiar">Resetear valores:</label>
+        <input type="reset" name="btnLimpiar" value="Limpiar controles">
+        <br>
+        <label for="numHijos">Cantidad de hijos:</label>
+        <input type="number" name="numHijos" id="numHijos">
+        <br>
+        <label for="radSexoMasculino">Masculino.</label>
+        <input type="radio" name="radSexo" id="radSexoMasculino" value="Masculino">
+
+        <label for="radSexoFemenino">Femenino.</label>
+        <input type="radio" name="radSexo" id="radSexoFemenino" value="Femenino">
+
+        <label for="radSexoPrefNoDec">Pref. no decirlo</label>
+        <input type="radio" name="radSexo" id="radSexoPrefNoDec" value="Pref. no decirlo">
+        <br>
+        <label for="filDocumento">Documento.</label>
+        <input type="file" name="filDocumento" id="filDocumento">
+        <br>
+        <label for="imgFoto">Foto.</label>
+        <input type="image" name="imgFoto" id="imgFoto" src="../imgs/boton.png">
+        <br>
+        <label for="urlSitio">Sitio Web.</label>
+        <input type="url" name="urlSitio" id="urlSitio">
+        <br>
+
+        <br/><input type="submit" value="Enviar">
+    </form>
+    <script src="../js/java.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+img{border: solid 5px rgb(118, 233, 114);}
+body {background-color: white;}
+*{color: #000000;}
+h1, h2 {
+    border: solid 4px rgb(10, 59, 3);
+margin: 50px;}
+.textogrande{font-size: 20px;
+    color: black;}
+#educacion {background: url(../imgs/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+padding: 40px;
+}
+#educacion h2 {background-color: #b5faba;}
+#contacto h2 {background-color: #b5faba;}
+#contacto {background: url(../imgs/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+padding: 40px;}
